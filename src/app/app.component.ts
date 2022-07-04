@@ -5,6 +5,24 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'Inputexample';
+  title: 'INPUTEXAMPLE'
+
+ parentCount:number=0;
+
+
+
+addUser ()
+{
+  this.parentCount+=1;
+
+}
+
+removeUser()
+{
+  if(this.parentCount>0)
+  this.parentCount-=1;
+}
+
 }
